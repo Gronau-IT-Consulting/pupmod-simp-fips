@@ -99,7 +99,8 @@ class fips (
       }
     }
     default : {
-      fail("Only the RedHat family is supported by the ${module_name} module at this time.")
+      warning("Only the RedHat family is supported by the simp fips module at this time.")
+      notify { "Only the RedHat family is supported by the simp fips module at this time.": }
     }
   }
 }
